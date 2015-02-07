@@ -1,0 +1,21 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  pool: 5
+  username: root
+  password: root
+  socket: /var/run/mysqld/mysqld.sock
+
+development:
+  <<: *default
+  database: microblog_development
+
+test:
+  <<: *default
+  database: microblog_test
+
+production:
+  <<: *default
+  database: microblog_production
+  username: microblog
+  password: <%= ENV['MICROBLOG_DATABASE_PASSWORD'] %>
