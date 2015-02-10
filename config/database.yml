@@ -16,6 +16,6 @@ test:
 
 production:
   <<: *default
-  database: microblog_production
-  username: microblog
-  password: <%= ENV['MICROBLOG_DATABASE_PASSWORD'] %>
+  database: microblog
+  username: adminJ5k2GdH
+  password: <%= ENV['OPENSHIFT_MYSQL_DB_PASSWORD'] %>
