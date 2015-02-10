@@ -1,0 +1,13 @@
+<%= link_to 'New post', 'new' %>
+
+<h1>Posts</h1>
+
+<% @posts.each do |post| %>
+  <div id="post-<%= post.id %>">
+    <h2><%= link_to post.title, post.slug %></h2>
+    <%= link_to 'Edit', 'edit/' << post.slug %>
+    <%= link_to 'Delete', 'delete/' << post.slug %>
+    <p><%= post.message %></p>
+    <hr />
+  </div>
+<% end %>

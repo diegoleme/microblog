@@ -13,7 +13,7 @@ Bundler.require(*Rails.groups)
 module Microblog
   class Application < Rails::Application
     config.time_zone = 'Brasilia'
-    config.i18n.default_locale = :"pt-BR"
+    # config.i18n.default_locale = :"pt-BR"
     config.active_record.raise_in_transactional_callbacks = true
   end
 end

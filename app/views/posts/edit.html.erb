@@ -1,0 +1,9 @@
+<h1>Edit post</h1>
+
+<%= flash[:error] %>
+
+<%= form_for :post do |f| %>
+  Title: <%= f.text_field :title %><br />
+  Message : <%= f.text_area :message %><br />
+  <%= f.submit %>
+<% end %>
