@@ -10,7 +10,6 @@ capybara-*.html
 rerun.txt
 pickle-email-*.html
 config/initializers/secret_token.rb
-config/secrets.yml
 /vendor/bundle
 Gemfile.lock, .ruby-version, .ruby-gemset
 /vendor/assets/bower_components
